@@ -1,0 +1,136 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "~@mdi/font/css/materialdesignicons.min.css";
+
+// Variables
+@import 'variables';
+@import 'style';
+@import './tiptap/main';
+@import '~vue2-dropzone/dist/vue2Dropzone.min.css';
+
+a{
+    text-decoration: none !important;
+}
+
+blockquote {
+    border-right: 6px solid rgba($color-black, 0.1) !important;
+    color: rgba($color-black, 0.8) !important;
+    padding-right: 0.9rem !important;
+
+    p {
+        margin: 0;
+    }
+}
+
+.real-table {
+    table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+
+        td, th {
+            min-width: 1em;
+            border: 2px solid $color-black;
+            padding: 3px 5px;
+            vertical-align: top;
+            box-sizing: border-box;
+            position: relative;
+
+            > * {
+                margin-bottom: 0;
+            }
+        }
+
+        th {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .selectedCell:after {
+            z-index: 2;
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(200, 200, 255, 0.4);
+            pointer-events: none;
+        }
+
+        .column-resize-handle {
+            position: absolute;
+            right: -2px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            z-index: 20;
+            background-color: #adf;
+            pointer-events: none;
+        }
+    }
+}
+
+
+.ltr{
+    direction: ltr !important;
+}
+.w-200{
+    width: 240px;
+}
+.v-application {
+    font-family: IRANSans, sans-serif  !important;
+    letter-spacing: 0 !important;
+    span,
+    h1.title,
+    h1.display-1,
+    span.display-1,
+    p.display-1,
+    p.font-weight-bold,
+    span.font-weight-bold,
+    p.headline,
+    span.display-2,
+    span.display-3,
+    span.display-4,
+    span.headline,
+    span.overline,
+    span.title,
+    p.title,
+    a.caption,
+    a.subtitle-2,
+    span.subtitle-1,
+    span.subtitle-2,
+    strong.subtitle-1,
+    span.body-1,
+    span.body-2,
+    span.caption,
+    v-card-title.font-weight-bold,
+    .overline,
+    .v-btn,
+
+    .v-tab {
+        font-family: IRANSans, sans-serif !important;
+        letter-spacing: 0 !important;
+    }
+}
+ img {
+    max-width: 85% !important;
+    border-radius: 3px !important;
+     display: block;
+     margin: 0 auto;
+}
+ .w-100 {
+    width: 100%;
+}
+ .container {
+    max-width: 1200px;
+}
+.container--fluid {
+    max-width: 100%;
+}
+// vuetify
+@import '~vuetify/dist/vuetify.min.css';
+$color-pack: false;
+@import '~vuetify/src/styles/main.sass';
